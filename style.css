@@ -4,6 +4,7 @@
 .img-comp-container {
   position: relative;
   height: 100%; /*should be the same height as the images*/
+  overflow: hidden;
 }
 
 .img-comp-img {
