@@ -1,11 +1,14 @@
 
 * {box-sizing: border-box;}
 
-
+html {
+    min-height: 100%;
+    position: relative;
+}
 
 .img-comp-container {
   position: relative;
-  height: 200px; /*should be the same height as the images*/
+  height: 100%; /*should be the same height as the images*/
 }
 
 .img-comp-img {
@@ -17,7 +20,7 @@
 
 .img-comp-img img {
   display:block;
-  vertical-align:middle;
+  vertical-align: middle;
 }
 
 .img-comp-slider {
@@ -25,9 +28,35 @@
   z-index:9;
   cursor: ew-resize;
   /*set the appearance of the slider:*/
-  width: 40px;
-  height: 40px;
+  width: 10px;
+  height:3000px;
   background-color: #2196F3;
   opacity: 0.7;
-  border-radius: 50%;
+  /* border-radius: 50%; */
 }
+
+.img-comp-slider::before {
+    content: "Original Pricing";
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:x-large;
+    font-weight: bold;
+    color: #2196F3;
+    position: absolute;
+    width: 10px;
+    margin-top: 5px;
+    left: -180px;
+    
+  }
+
+  .img-comp-slider::after {
+    content: "Current Pricing";
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:x-large;
+    font-weight: bold;
+    color: #2196F3;
+    position: absolute;
+    width: 10px;
+    margin-top: 5px;
+    left: 100px;
+    
+  }
