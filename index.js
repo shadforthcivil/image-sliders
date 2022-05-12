@@ -16,7 +16,6 @@ function initComparisons() {
     const imageContainer = document.getElementById("img-container");
     imageContainer.style.width = w + "px";
     imageContainer.style.height = h + "px";
-    console.log(imageContainer.style.width + imageContainer.style.height);
     /*set the width of the img element to 50%:*/
     img.style.width = (w / 2) + "px";
     /*create slider:*/
