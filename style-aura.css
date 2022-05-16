@@ -35,26 +35,26 @@
 }
 
 .img-comp-slider::before {
-    content: "Original";
+    content: "Before 2010";
     font-family: Arial, Helvetica, sans-serif;
     font-size:x-large;
     font-weight:bolder;
     color: #d6e30f;
     position: absolute;
-    width: 10px;
+    width: 50px;
     margin-top: 5px;
     left: -180px;
     
   }
 
   .img-comp-slider::after {
-    content: "Current";
+    content: "Now 2022";
     font-family: Arial, Helvetica, sans-serif;
     font-size:x-large;
     font-weight: bolder;
     color: #d6e30f;
     position: absolute;
-    width: 10px;
+    width: 50px;
     margin-top: 5px;
     left: 100px;
     
